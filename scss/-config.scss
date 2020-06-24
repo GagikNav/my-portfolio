@@ -32,6 +32,16 @@ $portrait-image: url('../img/portrait.jpg');
 }
 
 
+@mixin shadow-hover {
+   box-shadow: lighten($primary-color, 40) 4px 6px 2px;
+
+   &:hover {
+      box-shadow: lighten($secondary-color, 40) 6px 8px 10px;
+   }
+
+}
+
+
 //Setting text color function
 @function set-text-color($color) {
    @if (lightness($color)>40) {
