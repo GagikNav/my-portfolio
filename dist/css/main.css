@@ -186,13 +186,16 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #4d4d4d;
+    background: #666666;
     padding: 0.5rem;
     opacity: 0.5;
     border-radius: 1%;
+    transition: all 0.5s ease-out;
     box-shadow: #999999 4px 6px 2px; }
     .about-info .job:hover {
       box-shadow: #cbf5f8 6px 8px 10px; }
+    .about-info .job:hover {
+      transform: scale(1.03); }
 
 .projects {
   display: grid;
