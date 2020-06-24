@@ -5,23 +5,18 @@
    right: 35px;
    cursor: pointer;
 
-
-
-
    @include easeOut;
 
    .btn-line {
-      background: #ffff;
+      background: set-text-color($primary-color);
       height: 3px;
       width: 28px;
       margin: 0 0 5px 0;
-
-
-
       @include easeOut();
    }
 
    // transform to X
+
    &.close {
       transform: rotate(180deg);
 
@@ -132,7 +127,7 @@
       padding: 1rem 0;
       font-weight: 400;
       text-transform: uppercase;
-      color: #ffff;
+      color: set-text-color($primary-color);
       text-decoration: none;
       @include easeOut();
 

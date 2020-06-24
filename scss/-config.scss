@@ -1,5 +1,5 @@
-$primary-color:#444;
-$secondary-color:#14efff;
+$primary-color:#333;
+$secondary-color:#1fccd8;
 $show-home-image: true;
 $background-opacity:0.9;
 $home-image: url('../img/background.jpg');
@@ -30,6 +30,20 @@ $portrait-image: url('../img/portrait.jpg');
       }
    }
 }
+
+
+//Setting text color function
+@function set-text-color($color) {
+   @if (lightness($color)>40) {
+      @return #252424;
+   }
+
+   @else {
+      @return #fff;
+   }
+
+}
+
 
 
 

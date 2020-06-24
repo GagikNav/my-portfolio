@@ -28,6 +28,8 @@
       }
    }
 
+
+
    ul.menu-nav,
    div.menu-branding {
       float: none;
@@ -53,21 +55,12 @@
          .nav-item:nth-child(#{$x}) {
             transition-delay: $x * 150ms;
          }
-
-
       }
-
 
       .nav-link {
-         font-size: 1.5rem;
-
+         font-size: 2rem;
       }
-
-
-
    }
-
-
 
    .menu-branding {
       height: 25vh;
@@ -80,8 +73,22 @@
       }
    }
 
+   .about-info {
+      grid-template-areas:
+         'bioimg'
+         'bio'
+         'job1'
+         'job2'
+         'job3'
+      ;
+      grid-template-columns: 1fr;
+   }
+
+
 
 }
+
+
 
 // Smartphone
 @include mediaSm {
