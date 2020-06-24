@@ -112,7 +112,7 @@
    }
 
    .nav-item {
-      transform: translate3d(800px, -1200px, 0);
+      transform: translate3d(500px, -600px, 0);
       @include easeOut();
 
       &.show {
@@ -129,9 +129,9 @@
       display: inline-block;
       position: relative;
       font-size: 2rem;
-      text-transform: uppercase;
       padding: 1rem 0;
       font-weight: 400;
+      text-transform: uppercase;
       color: #ffff;
       text-decoration: none;
       @include easeOut();
@@ -153,7 +153,7 @@
 
 @for $x from 1 through 4 {
    .nav-item:nth-child(#{$x}) {
-      transition-delay: $x * 100ms;
+      transition-delay: $x * 150ms;
    }
 
 
