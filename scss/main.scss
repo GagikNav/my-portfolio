@@ -15,6 +15,7 @@ html {
 
 body {
    @include background;
+   // overflow: hidden;
    background: $primary-color;
    color: set-text-color($primary-color);
    height: 100%;
@@ -105,8 +106,14 @@ main {
       grid-area: bioimg;
       margin: auto;
       border-radius: 50%;
-      border: $secondary-color solid 4px;
+      border: $border;
+      box-shadow: $shadow;
 
+      &:hover {
+         transform: scale(1.01);
+      }
+
+      @include easeOut();
    }
 
    .bio {
@@ -130,15 +137,15 @@ main {
    }
 
    .job {
-      background: lighten($primary-color, 20);
+      background: lighten($primary-color, 30);
       padding: 0.5rem;
       opacity: 0.5;
       border-radius: 1%;
       @include easeOut();
 
-      @include shadow-hover();
 
       &:hover {
+         @include shadow-hover();
          transform: scale(1.03);
       }
 
@@ -190,7 +197,7 @@ main {
       margin-bottom: 1.5rem;
 
       &:hover {
-         box-shadow: lighten($secondary-color, 40) 6px 8px 10px;
+         box-shadow: lighten($secondary-color, 30) 6px 8px 10px;
          transform: scale(1.04);
       }
 

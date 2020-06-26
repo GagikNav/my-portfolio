@@ -1,10 +1,13 @@
 $primary-color:#333;
-$secondary-color:#1fccd8;
+$secondary-color:#3bf5cd;
 $show-home-image: true;
 $background-opacity:0.9;
 $home-image: url('../img/background.jpg');
-$portrait-image: url('../img/portrait.jpg');
-
+$portrait-image: url('../img/Gagik-portrait-250px.jpg');
+$portrait-image-small: url('../img/Gagik-portrait-150px.jpg');
+$border: solid 4px darken($secondary-color, 25);
+$shadow: lighten($primary-color, 10) 5px 6px 10px;
+;
 
 @mixin easeOut {
    transition: all 0.5s ease-out;
@@ -15,7 +18,7 @@ $portrait-image: url('../img/portrait.jpg');
       &#bg-img {
          background: $home-image;
          background-attachment: fixed;
-         background-size: cover;
+         background-size: cover, contain;
 
          &::after {
             content: '';
@@ -36,7 +39,7 @@ $portrait-image: url('../img/portrait.jpg');
    box-shadow: lighten($primary-color, 40) 4px 6px 2px;
 
    &:hover {
-      box-shadow: lighten($secondary-color, 40) 6px 8px 10px;
+      box-shadow: lighten($secondary-color, 20) 6px 8px 10px;
    }
 
 }

@@ -57,16 +57,17 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.jpg");
+      background: url("../img/Gagik-portrait-250px.jpg");
       border-radius: 50%;
-      border: solid 3px #1fccd8; }
+      border: solid 4px #09a886;
+      box-shadow: #4d4d4d 5px 6px 10px; }
   .menu .nav-item {
     transform: translate3d(500px, -600px, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #1fccd8; }
+      color: #3bf5cd; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -78,7 +79,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #1fccd8;
+      color: #3bf5cd;
       transition: all 0.5s ease-out; }
 
 .nav-item:nth-child(1) {
@@ -112,7 +113,7 @@ body {
   body#bg-img {
     background: url("../img/background.jpg");
     background-attachment: fixed;
-    background-size: cover; }
+    background-size: cover, contain; }
     body#bg-img::after {
       content: '';
       position: absolute;
@@ -149,7 +150,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #1fccd8; }
+  color: #3bf5cd; }
 
 main {
   padding: 4rem;
@@ -163,7 +164,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #1fccd8;
+        color: #3bf5cd;
         transition: all 0.5s ease-out; }
 
 .about-info {
@@ -175,7 +176,11 @@ main {
     grid-area: bioimg;
     margin: auto;
     border-radius: 50%;
-    border: #1fccd8 solid 4px; }
+    border: solid 4px #09a886;
+    box-shadow: #4d4d4d 5px 6px 10px;
+    transition: all 0.5s ease-out; }
+    .about-info .bio-img:hover {
+      transform: scale(1.01); }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -186,16 +191,16 @@ main {
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #666666;
+    background: gray;
     padding: 0.5rem;
     opacity: 0.5;
     border-radius: 1%;
-    transition: all 0.5s ease-out;
-    box-shadow: #999999 4px 6px 2px; }
+    transition: all 0.5s ease-out; }
     .about-info .job:hover {
-      box-shadow: #cbf5f8 6px 8px 10px; }
-    .about-info .job:hover {
+      box-shadow: #999999 4px 6px 2px;
       transform: scale(1.03); }
+      .about-info .job:hover:hover {
+        box-shadow: #9cfae6 6px 8px 10px; }
 
 .projects {
   display: grid;
@@ -205,7 +210,7 @@ main {
     width: 100%;
     border: 3px #fff solid; }
     .projects img:hover {
-      border-color: #1fccd8;
+      border-color: #3bf5cd;
       opacity: 0.8;
       transform: scale(1.04);
       transition: all 0.5s ease-out; }
@@ -224,7 +229,7 @@ main {
     margin-bottom: 1.5rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
-      box-shadow: #cbf5f8 6px 8px 10px;
+      box-shadow: #cdfcf2 6px 8px 10px;
       transform: scale(1.04); }
 
 .btn, .btn-dark, .btn-light {
@@ -236,7 +241,7 @@ main {
   justify-content: center;
   align-items: center; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #1fccd8;
+    background: #3bf5cd;
     color: #252424;
     transition: all 0.5s ease-out; }
 
@@ -272,7 +277,6 @@ main {
     align-items: center;
     text-align: center; }
     main#home {
-      margin: 1rem;
       padding: 5rem; }
     main .lg-heading {
       font-size: 4rem !important; }
@@ -306,7 +310,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait_small.jpg");
+      background: url("../img/Gagik-portrait-150px.jpg");
       width: 150px;
       height: 150px; }
   .about-info {
@@ -320,7 +324,7 @@ main {
     align-items: center;
     text-align: center; }
     main#home {
-      margin: 0.5rem;
+      margin: 0rem;
       padding: 3rem; }
       main#home h1 {
         margin-top: 10vh; }
