@@ -254,8 +254,9 @@ main {
 .btn-light {
   background: #b3b3b3;
   color: #333; }
-  .btn-light:hover {
-    cursor: not-allowed; }
+
+#inactive {
+  pointer-events: none; }
 
 #main-footer {
   width: 100%;

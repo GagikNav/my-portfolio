@@ -241,12 +241,11 @@ main {
    background: lighten($primary-color, 50);
    color: #333;
 
-   // pointer-events: none;
+}
 
-   &:hover {
-      cursor: not-allowed;
-   }
+#inactive {
 
+   pointer-events: none;
 }
 
 
