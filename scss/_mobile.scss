@@ -79,9 +79,9 @@
          @include easeOut();
       }
 
-      @for $x from 1 through 4 {
+      @for $x from 1 through 5 {
          .nav-item:nth-child(#{$x}) {
-            transition-delay: $x * 150ms;
+            transition-delay: $x * 80ms;
          }
       }
 
