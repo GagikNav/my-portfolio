@@ -21,7 +21,6 @@
       transform: rotate(180deg);
 
       .btn-line {
-
          // rotate line one
          &:nth-child(1) {
             transform: rotate(45deg) translate(5px, 5px);
@@ -37,7 +36,6 @@
          &:nth-child(3) {
             transform: rotate(-45deg) translate(7px, -6px);
          }
-
       }
    }
 }
@@ -64,7 +62,6 @@
       width: 50%;
       height: 100vh;
       overflow: hidden;
-
    }
 
    &-nav {
@@ -75,12 +72,10 @@
       transform: translate3d(0, -100%, 0);
       @include easeOut();
 
-
       // sliding from top
       &.show {
          transform: translate3d(0, 0, 0);
       }
-
    }
 
    &-branding {
@@ -100,11 +95,7 @@
          border-radius: 50%;
          border: $border;
          box-shadow: $shadow;
-
-
-
       }
-
    }
 
    .nav-item {
@@ -115,9 +106,8 @@
          transform: translate3d(0, 0, 0);
       }
 
-      &.current>a {
+      &.current > a {
          color: $secondary-color;
-
       }
    }
 
@@ -137,20 +127,12 @@
          @include easeOut();
       }
    }
-
-
-
-
 }
 
-
-//delay for each nav item 
-
+//delay for each nav item
 
 @for $x from 1 through 5 {
    .nav-item:nth-child(#{$x}) {
       transition-delay: $x * 80ms;
    }
-
-
 }
