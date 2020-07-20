@@ -140,9 +140,7 @@
 }
 
 .menu .nav-link:hover {
-  color: #3bf5cd;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  color: red;
 }
 
 .nav-item:nth-child(1) {
@@ -547,11 +545,6 @@ main .icons a:hover {
     background: url("../img/Gagik-portrait-150px.jpg");
     width: 150px;
     height: 150px;
-  }
-  .about-info {
-        grid-template-areas: 'bioimg' 'bio' 'job1' 'job2' 'job3';
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
   }
 }
 

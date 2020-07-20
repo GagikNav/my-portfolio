@@ -7,7 +7,6 @@
          height: 280px;
       }
    }
-
 }
 
 // desktop
@@ -22,10 +21,8 @@
    }
 }
 
-
 // Tablets
 @include mediaMd {
-
    .projects {
       grid-template-columns: repeat(2, 1fr);
 
@@ -44,19 +41,14 @@
 
       .lg-heading {
          // color: red;
-         font-size: 4rem !important
+         font-size: 4rem !important;
       }
 
       .sm-heading {
          // color: red;
-         font-size: 1rem !important
+         font-size: 1rem !important;
       }
-
-
    }
-
-
-
 
    ul.menu-nav,
    div.menu-branding {
@@ -70,7 +62,6 @@
    }
 
    .menu-nav {
-
       height: 75vh;
       transform: translate3d(-100%, 0, 0);
 
@@ -102,21 +93,15 @@
    }
 
    .about-info {
-      grid-template-areas:
-         'bioimg'
-         'bio'
-         'job1'
-         'job2'
-         'job3'
-      ;
-      grid-template-columns: 1fr;
+      // grid-template-areas:
+      //    // 'bioimg'
+      //    // 'bio'
+      //    // 'job1'
+      //    // 'job2'
+      //    // 'job3' ;
+      // grid-template-columns: 1fr;
    }
-
-
-
 }
-
-
 
 // Smartphone
 @include mediaSm {
@@ -127,7 +112,6 @@
          height: 280px;
       }
    }
-
 
    main {
       align-items: center;
@@ -144,16 +128,12 @@
 
       .lg-heading {
          // color: red;
-         font-size: 3rem !important
+         font-size: 3rem !important;
       }
 
       .sm-heading {
          // color: red;
-         font-size: 1rem !important
+         font-size: 1rem !important;
       }
    }
-
-
-
-
 }

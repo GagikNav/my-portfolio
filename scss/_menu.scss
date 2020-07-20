@@ -1,138 +1,190 @@
+@import './hambuger-animation';
+%line {
+	background: set-text-color($primary-color);
+	height: 3px;
+	width: 38px;
+	margin: 0 0 7px 0;
+}
 .menu-btn {
-   position: absolute;
-   z-index: 3;
-   top: 35px;
-   right: 35px;
-   cursor: pointer;
+	position: absolute;
+	z-index: 3;
+	top: 35px;
+	right: 35px;
+	cursor: pointer;
+	@include easeOut;
+	& p {
+		// transition: all 0.1s ease-in-out;
 
-   @include easeOut;
+		font-family: 'Mulish', sans-serif;
+		padding: 0;
+		margin: 0;
+		opacity: 0;
+		font-size: 0.8rem;
+		position: absolute;
+		top: 1px;
+		left: 2px;
+	}
 
-   .btn-line {
-      background: set-text-color($primary-color);
-      height: 3px;
-      width: 28px;
-      margin: 0 0 5px 0;
-      @include easeOut();
-   }
+	.btn-line {
+		@extend %line;
+		@include easeOut();
 
-   // transform to X
+		// transition: all 0.15s 0 ease-out;
+		// &:nth-child(2) {
+		// 	animation: menu-load-state-top 0.5s;
+		// }
 
-   &.close {
-      transform: rotate(180deg);
+		// &:nth-child(3) {
+		// 	transition: all 0.1s 0.1s ease-in-out;
+		// 	opacity: 1;
+		// }
 
-      .btn-line {
-         // rotate line one
-         &:nth-child(1) {
-            transform: rotate(45deg) translate(5px, 5px);
-         }
+		// &:nth-child(4) {
+		// 	animation: menu-load-state-bottom 0.5s;
+		// }
+	}
 
-         // hide line tow
-         &:nth-child(2) {
-            visibility: hidden;
-            transition: none;
-         }
+	// .btn-line {
+	// 	&:hover {
+	// 		transition: all 0.15s 0 ease-out;
+	// 		&:nth-child(1) {
+	// 			animation: menu-hover-top-over 0.5s 0.5s forwards;
+	// 		}
 
-         // rotate line three
-         &:nth-child(3) {
-            transform: rotate(-45deg) translate(7px, -6px);
-         }
-      }
-   }
+	// 		&:nth-child(2) {
+	// 			transition: all 0.1s 0.1s ease-in-out;
+	// 			opacity: 0;
+	// 		}
+
+	// 		&:nth-child(3) {
+	// 			animation: menu-hover-bottom-over 0.5s 0.5s forwards;
+	// 		}
+	// 	}
+	// 	p {
+	// 		transition: all 0.1s 0.5s ease-in-out;
+	// 		opacity: 1;
+	// 	}
+	// }
+	// transform to X
+
+	&.close {
+		transform: rotate(180deg);
+		p {
+			opacity: 0;
+		}
+		.btn-line {
+			// rotate line one
+			&:nth-child(1) {
+				transform: rotate(45deg) translate(6px, 6px);
+			}
+
+			// hide line tow
+			&:nth-child(2) {
+				visibility: hidden;
+				transition: none;
+			}
+
+			// rotate line three
+			&:nth-child(3) {
+				transform: rotate(-45deg) translate(9px, -7px);
+			}
+		}
+	}
 }
 
 // menu overlay
 .menu {
-   position: fixed;
-   top: 0;
-   width: 100%;
-   opacity: 0.98;
-   visibility: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	opacity: 0.98;
+	visibility: hidden;
 
-   &.show {
-      visibility: visible;
-   }
+	&.show {
+		visibility: visible;
+	}
 
-   &-branding,
-   &-nav {
-      display: flex;
-      flex-flow: column wrap;
-      align-items: center;
-      justify-content: center;
-      float: left;
-      width: 50%;
-      height: 100vh;
-      overflow: hidden;
-   }
+	&-branding,
+	&-nav {
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+		justify-content: center;
+		float: left;
+		width: 50%;
+		height: 100vh;
+		overflow: hidden;
+	}
 
-   &-nav {
-      margin: 0;
-      padding: 0;
-      background: darken($primary-color, 5);
-      list-style: none;
-      transform: translate3d(0, -100%, 0);
-      @include easeOut();
+	&-nav {
+		margin: 0;
+		padding: 0;
+		background: darken($primary-color, 5);
+		list-style: none;
+		transform: translate3d(0, -100%, 0);
+		@include easeOut();
 
-      // sliding from top
-      &.show {
-         transform: translate3d(0, 0, 0);
-      }
-   }
+		// sliding from top
+		&.show {
+			transform: translate3d(0, 0, 0);
+		}
+	}
 
-   &-branding {
-      transform: translate3d(0, 100%, 0);
-      background: $primary-color;
-      @include easeOut();
+	&-branding {
+		transform: translate3d(0, 100%, 0);
+		background: $primary-color;
+		@include easeOut();
 
-      // sliding from bottom
-      &.show {
-         transform: translate3d(0, 0, 0);
-      }
+		// sliding from bottom
+		&.show {
+			transform: translate3d(0, 0, 0);
+		}
 
-      .portrait {
-         width: 250px;
-         height: 250px;
-         background: $portrait-image;
-         border-radius: 50%;
-         border: $border;
-         box-shadow: $shadow;
-      }
-   }
+		.portrait {
+			width: 250px;
+			height: 250px;
+			background: $portrait-image;
+			border-radius: 50%;
+			border: $border;
+			box-shadow: $shadow;
+		}
+	}
 
-   .nav-item {
-      transform: translate3d(500px, -600px, 0);
-      @include easeOut();
+	.nav-item {
+		transform: translate3d(500px, -600px, 0);
+		@include easeOut();
 
-      &.show {
-         transform: translate3d(0, 0, 0);
-      }
+		&.show {
+			transform: translate3d(0, 0, 0);
+		}
 
-      &.current > a {
-         color: $secondary-color;
-      }
-   }
+		&.current > a {
+			color: $secondary-color;
+		}
+	}
 
-   .nav-link {
-      display: inline-block;
-      position: relative;
-      font-size: 2rem;
-      padding: 1rem 0;
-      font-weight: 400;
-      text-transform: uppercase;
-      color: set-text-color($primary-color);
-      text-decoration: none;
-      @include easeOut();
+	.nav-link {
+		display: inline-block;
+		position: relative;
+		font-size: 2rem;
+		padding: 1rem 0;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: set-text-color($primary-color);
+		text-decoration: none;
+		@include easeOut();
 
-      &:hover {
-         color: $secondary-color;
-         @include easeOut();
-      }
-   }
+		&:hover {
+			color: $secondary-color;
+			@include easeOut();
+		}
+	}
 }
 
 //delay for each nav item
 
 @for $x from 1 through 5 {
-   .nav-item:nth-child(#{$x}) {
-      transition-delay: $x * 80ms;
-   }
+	.nav-item:nth-child(#{$x}) {
+		transition-delay: $x * 80ms;
+	}
 }

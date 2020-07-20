@@ -1,4 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap");
+@keyframes menu-hover-top-over {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(8px); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes menu-hover-bottom-over {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-8px); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes menu-load-state-top {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(8px); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes menu-load-state-bottom {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-8px); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes menu-active-slide {
+  0% {
+    transform: translateX(-10px); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes top-rot-in {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: left; }
+  100% {
+    transform: rotate(45deg);
+    transform-origin: left; } }
+
+@keyframes bot-rot-in {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: left; }
+  100% {
+    transform: rotate(-45deg);
+    transform-origin: left; } }
+
+.menu-btn .btn-line {
+  background: #fff;
+  height: 3px;
+  width: 38px;
+  margin: 0 0 7px 0; }
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -6,21 +67,28 @@
   right: 35px;
   cursor: pointer;
   transition: all 0.5s ease-out; }
+  .menu-btn p {
+    font-family: 'Mulish', sans-serif;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 1px;
+    left: 2px; }
   .menu-btn .btn-line {
-    background: #fff;
-    height: 3px;
-    width: 28px;
-    margin: 0 0 5px 0;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
+    .menu-btn.close p {
+      opacity: 0; }
     .menu-btn.close .btn-line:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px); }
+      transform: rotate(45deg) translate(6px, 6px); }
     .menu-btn.close .btn-line:nth-child(2) {
       visibility: hidden;
       transition: none; }
     .menu-btn.close .btn-line:nth-child(3) {
-      transform: rotate(-45deg) translate(7px, -6px); }
+      transform: rotate(-45deg) translate(9px, -7px); }
 
 .menu {
   position: fixed;
@@ -328,10 +396,7 @@ main {
     .menu-branding .portrait {
       background: url("../img/Gagik-portrait-150px.jpg");
       width: 150px;
-      height: 150px; }
-  .about-info {
-    grid-template-areas: 'bioimg' 'bio' 'job1' 'job2' 'job3';
-    grid-template-columns: 1fr; } }
+      height: 150px; } }
 
 @media screen and (max-width: 500px) {
   .projects {
