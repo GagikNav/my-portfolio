@@ -93,13 +93,12 @@
    }
 
    .about-info {
-      // grid-template-areas:
-      //    // 'bioimg'
+      grid-template-columns: 1fr;
+      grid-template-areas: 'bioimg' 'bio';
       //    // 'bio'
       //    // 'job1'
       //    // 'job2'
       //    // 'job3' ;
-      // grid-template-columns: 1fr;
    }
 }
 

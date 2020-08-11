@@ -180,7 +180,16 @@
 		}
 	}
 }
+.to-home {
+	color: set-text-color($primary-color);
 
+	position: fixed;
+	bottom: 10px;
+	i {
+		margin: 0.5rem;
+	}
+	margin: 2rem;
+}
 //delay for each nav item
 
 @for $x from 1 through 5 {
