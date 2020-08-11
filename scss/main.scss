@@ -16,7 +16,6 @@ html {
 
 body {
 	@include background;
-	// overflow: hidden;
 	background: $primary-color;
 	color: set-text-color($primary-color);
 	height: 100%;
@@ -72,10 +71,14 @@ main {
 	min-height: calc(100vh - 40px);
 
 	.icons {
+		display: flex;
+		// background: #000;
+		font-size: 1.5rem;
+		width: 100%;
 		margin-top: 2rem;
-
 		a {
 			padding: 0.4rem;
+			margin: 0 0.5rem;
 
 			&:hover {
 				color: $secondary-color;
@@ -231,6 +234,50 @@ main {
 	color: set-text-color($primary-color);
 	opacity: 0.1;
 	height: 40px;
+}
+
+#line {
+	width: 70%;
+	margin-top: 2rem;
+	margin: 0 auto;
+	border-bottom: white 1px solid;
+}
+
+#btn-footer {
+	// border: white 1px solid;
+	width: 100%;
+	opacity: 0.8;
+	height: 40px;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr;
+	gap: 0 0;
+	align-content: center;
+	justify-content: center;
+	justify-items: center;
+	align-items: start;
+
+	ul {
+		width: 80%;
+		height: 40px;
+		// border: white 1px solid;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: auto;
+		gap: 10px 10px;
+		list-style: none;
+
+		li {
+			align-self: center;
+			// border: white 1px solid;
+			@include easeOut;
+			// margin: 10px 30px;
+			&:hover {
+				transform: scale(1.05);
+				text-shadow: lighten($secondary-color, 10) 0px 0px 10px;
+			}
+		}
+	}
 }
 
 @import './mobile';
