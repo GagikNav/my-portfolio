@@ -498,6 +498,7 @@ main .icons a:hover {
       grid-template-areas: 'bioimg bio bio' 'job1 job2 job3';
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  font-family: 'Mulish', sans-serif;
 }
 
 .about-info .bio-img {

@@ -94,7 +94,7 @@ main {
 		'bioimg bio bio'
 		'job1 job2 job3';
 	grid-template-columns: repeat(3, 1fr);
-
+	font-family: 'Mulish', sans-serif;
 	.bio-img {
 		grid-area: bioimg;
 		margin: auto;
