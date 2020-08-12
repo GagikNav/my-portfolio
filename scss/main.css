@@ -481,6 +481,8 @@ main .index-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
 }
 
@@ -872,6 +874,11 @@ main .index-icons a:hover {
         grid-template-columns: 1fr;
         grid-template-areas: 'bioimg' 'bio';
   }
+  .index-icons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -900,6 +907,11 @@ main .index-icons a:hover {
   }
   main .sm-heading {
     font-size: 1rem !important;
+  }
+  .index-icons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
