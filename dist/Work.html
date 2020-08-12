@@ -5,7 +5,8 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <script src="https://kit.fontawesome.com/d15fe57b82.js" crossorigin="anonymous"></script>
-
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="./css/main.css">
    <title>My Work</title>
 </head>
@@ -125,30 +126,31 @@
 
    </main>
    <div id="btn-footer">
-      <ul class="f-menu-nav">
+      <div class="footer-icons">
 
-         <li class="f-nav-item current">
-            <a href="./index.html" class="f-nav-link ">Home</a>
-         </li>
+         <a href="./index.html" id="f-home">
+            <i class="fas fa-house-user"></i>
+         </a>
+         <a href="https://www.linkedin.com/in/gagik-n/" target="_blank">
+            <i class="fab fa-linkedin fa-2x"></i>
+         </a>
+         <a href="https://github.com/GagikNav" target="_blank">
+            <i class="fab fa-github fa-2x"></i>
+         </a>
+         <a href="./about.html" id="f-about">
+            <i class="far fa-id-card"></i>
+         </a>
+         <a href="./Work.html" id="f-portfolio">
+            <i class="fas fa-code"></i>
+         </a>
+         <a href="./contact.html" id="f-contact">
+            <i class="far fa-envelope"></i>
+         </a>
 
-         <li class="f-nav-item">
-            <a href="./about.html" class="f-nav-link">About Me</a>
-         </li>
-
-         <li class="f-nav-item">
-            <a href="./work.html" class="f-nav-link">Portfolio</a>
-         </li>
-
-         <li class="f-nav-item">
-            <a href="./contact.html" class="f-nav-link">Contact Me</a>
-         </li>
-
-         <li class="f-nav-item">
-            <a href="https://drive.google.com/file/d/152BqLOFxWFL_KUAdTnOp8xI0IQ9CJlQZ/view?usp=sharing"
-               class="f-nav-link" target="_blank">Resume</a>
-         </li>
-
-      </ul>
+         <a href="https://drive.google.com/file/d/152BqLOFxWFL_KUAdTnOp8xI0IQ9CJlQZ/view?usp=sharing" class="nav-link"
+            target="_blank"><i class="fas fa-user-tie"></i>
+         </a>
+      </div>
    </div>
 
    <footer id="main-footer"></footer>

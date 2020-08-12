@@ -6,6 +6,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <script src="https://kit.fontawesome.com/d15fe57b82.js" crossorigin="anonymous"></script>
 
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
    <link rel="stylesheet" href="./css/main.css">
    <title>About Me</title>
 </head>
@@ -63,13 +66,14 @@
             <p>I have been a civil engineer for more than 12 years of international experience, and recently I possessed
                a deep
                passion about 
-               "Web Development".
-               I've acquired good knowledge of <b>Javascript</b>, <b>HTML</b>, <b>CSS</b>, <b>NODE JS</b> (on server
+               "Web Development".</p>
+            <p>I've acquired good knowledge of <b>Javascript</b>, <b>HTML</b>, <b>CSS</b>, <b>NODE JS</b> (on server
                side), <b>Webpack</b> and other
                technologies
                in front-end
-               development.
-               As a sizzling front end developer, I keep my skills aligned with cutting edge technologies and industry
+               development.</p>
+            <p>As a sizzling front end developer, I keep my skills aligned with cutting edge technologies and
+               industry
                trends such as
                ES6, React, Redux and Node-JS(Express), and pursuing  my mission to constantly develop my skills and
                never stop learning
@@ -98,32 +102,34 @@
       </div> -->
 
    </main>
-   <div id="line"></div>
+   <!-- <div id="line"></div> -->
    <div id="btn-footer">
-      <ul class="f-menu-nav">
+      <div class="footer-icons">
 
-         <li class="f-nav-item current">
-            <a href="./index.html" class="f-nav-link ">Home</a>
-         </li>
+         <a href="./index.html" id="f-home" class="tooltip">
+            <i class="fas fa-house-user"></i><span class="tooltiptext">Home</span>
+         </a>
+         <a href="https://www.linkedin.com/in/gagik-n/" target="_blank" class="tooltip">
+            <i class="fab fa-linkedin fa-2x"></i><span class="tooltiptext">linkedin</span>
+         </a>
+         <a href="https://github.com/GagikNav" class="tooltip" target="_blank">
+            <i class="fab fa-github fa-2x"></i><span class="tooltiptext">Github</span>
+         </a>
+         <a href="./about.html" id="f-about" class="tooltip">
+            <i class="far fa-id-card"></i><span class="tooltiptext">About me</span>
+         </a>
+         <a href="./Work.html" id="f-portfolio" class="tooltip">
+            <i class="fas fa-code"></i><span class="tooltiptext">Portfolio</span>
+         </a>
+         <a href="./contact.html" id="f-contact" class="tooltip">
+            <i class="far fa-envelope"></i><span class="tooltiptext">Contact me</span>
+         </a>
 
-         <li class="f-nav-item">
-            <a href="./about.html" class="f-nav-link">About Me</a>
-         </li>
-
-         <li class="f-nav-item">
-            <a href="./work.html" class="f-nav-link">Portfolio</a>
-         </li>
-
-         <li class="f-nav-item">
-            <a href="./contact.html" class="f-nav-link">Contact Me</a>
-         </li>
-
-         <li class="f-nav-item">
-            <a href="https://drive.google.com/file/d/152BqLOFxWFL_KUAdTnOp8xI0IQ9CJlQZ/view?usp=sharing"
-               class="f-nav-link" target="_blank">Resume</a>
-         </li>
-
-      </ul>
+         <a href="https://drive.google.com/file/d/152BqLOFxWFL_KUAdTnOp8xI0IQ9CJlQZ/view?usp=sharing" class=" tooltip""
+            target=" _blank"><i class="fas fa-user-tie"></i>
+            <span class="tooltiptext">Resume</span>
+         </a>
+      </div>
    </div>
 
    <footer id="main-footer"></footer>

@@ -70,19 +70,28 @@ main {
 	// height: 100%;
 	min-height: calc(100vh - 40px);
 
-	.icons {
+	.index-icons {
 		display: flex;
 		// background: #000;
-		font-size: 1.5rem;
+		i {
+			font-size: 2.8rem;
+			margin: auto;
+		}
 		width: 100%;
-		margin-top: 2rem;
 		a {
-			padding: 0.4rem;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			gap: 5px;
+			padding: 0.6rem;
 			margin: 0 0.5rem;
+			font-family: 'Mulish', sans-serif;
+			font-size: 1rem;
 
 			&:hover {
 				color: $secondary-color;
 				@include easeOut();
+				transform: scale(1.04);
 			}
 		}
 	}
@@ -115,6 +124,11 @@ main {
 	.bio {
 		grid-area: bio;
 		font-size: 1.5rem;
+		text-align: justify;
+		text-indent: 40px;
+		p {
+			line-height: 1.5;
+		}
 	}
 
 	.job-1 {
@@ -236,46 +250,50 @@ main {
 	height: 40px;
 }
 
-#line {
-	width: 70%;
-	margin-top: 2rem;
-	margin: 0 auto;
-	border-bottom: white 1px solid;
-}
-
 #btn-footer {
+	position: relative;
+	bottom: 3rem;
 	// border: white 1px solid;
 	width: 100%;
 	opacity: 0.8;
-	height: 40px;
-	display: grid;
-	grid-template-rows: 1fr;
-	grid-template-columns: 1fr;
-	gap: 0 0;
-	align-content: center;
+	height: 60px;
+	margin-top: 2rem;
+	display: flex;
 	justify-content: center;
-	justify-items: center;
-	align-items: start;
+	align-items: center;
 
-	ul {
-		width: 80%;
-		height: 40px;
-		// border: white 1px solid;
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-		grid-template-rows: auto;
-		gap: 10px 10px;
-		list-style: none;
-
-		li {
-			align-self: center;
-			// border: white 1px solid;
-			@include easeOut;
-			// margin: 10px 30px;
-			&:hover {
-				transform: scale(1.05);
-				text-shadow: lighten($secondary-color, 10) 0px 0px 10px;
+	.footer-icons {
+		display: flex;
+		gap: 2rem;
+		i {
+			font-size: 1.8rem;
+			margin: auto;
+		}
+		a {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			gap: 5px;
+			padding: 0.6rem;
+			margin: 0 0.5rem;
+			font-family: 'Mulish', sans-serif;
+			font-size: 1rem;
+			span {
+				visibility: hidden;
+				font-size: 0.8rem;
 			}
+
+			&:hover {
+				@include easeOut();
+				transform: scale(1.04);
+				color: $secondary-color;
+				span {
+					visibility: visible;
+				}
+			}
+		}
+		.inactive {
+			display: none;
 		}
 	}
 }
