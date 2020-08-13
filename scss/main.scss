@@ -189,7 +189,7 @@ main {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
-	margin-top: 1rem;
+	margin: 1rem 2rem 0 2rem;
 
 	div {
 		font-size: 2rem;
@@ -200,7 +200,7 @@ main {
 		margin-bottom: 1.5rem;
 
 		&:hover {
-			box-shadow: lighten($secondary-color, 22) 2px 4px 8px;
+			box-shadow: lighten($secondary-color, 22) 2px 2px 8px;
 			transform: scale(1.03);
 		}
 

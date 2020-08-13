@@ -635,7 +635,7 @@ main .index-icons a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 1rem;
+  margin: 1rem 2rem 0 2rem;
 }
 
 .boxes div {
@@ -650,8 +650,8 @@ main .index-icons a:hover {
 }
 
 .boxes div:hover {
-  -webkit-box-shadow: #a6fae8 2px 4px 8px;
-          box-shadow: #a6fae8 2px 4px 8px;
+  -webkit-box-shadow: #a6fae8 2px 2px 8px;
+          box-shadow: #a6fae8 2px 2px 8px;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }
