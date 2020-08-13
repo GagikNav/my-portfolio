@@ -465,8 +465,8 @@ header {
 }
 
 main {
-  padding: 4rem;
-  min-height: calc(100vh - 40px);
+  padding: 10 rem;
+  min-height: calc(100vh - 50px);
 }
 
 main#home {
@@ -896,8 +896,8 @@ main .index-icons a:hover {
     text-align: center;
   }
   main#home {
-    margin: 0rem;
-    padding: 3rem;
+    margin-top: 0rem;
+    padding: 0rem;
   }
   main#home h1 {
     margin-top: 10vh;
