@@ -118,7 +118,7 @@
 
 	&-nav {
 		margin: 0;
-		padding: 0;
+		padding: 0 0 4rem 0;
 		background: darken($primary-color, 5);
 		list-style: none;
 		transform: translate3d(0, -100%, 0);
@@ -169,6 +169,7 @@
 		font-size: 2rem;
 		padding: 1rem 0;
 		font-weight: 400;
+		margin-top: 0;
 		text-transform: uppercase;
 		color: set-text-color($primary-color);
 		text-decoration: none;

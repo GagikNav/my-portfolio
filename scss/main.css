@@ -293,7 +293,7 @@
 
 .menu-nav {
   margin: 0;
-  padding: 0;
+  padding: 0 0 4rem 0;
   background: #262626;
   list-style: none;
   -webkit-transform: translate3d(0, -100%, 0);
@@ -352,6 +352,7 @@
   font-size: 2rem;
   padding: 1rem 0;
   font-weight: 400;
+  margin-top: 0;
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
@@ -465,12 +466,13 @@ header {
 }
 
 main {
-  padding: 10 rem;
-  min-height: calc(100vh - 50px);
+  padding: 2rem;
+  min-height: calc(100vh - 40px);
 }
 
 main#home {
-  overflow: hidden;
+  overflow-x: hidden;
+  height: 60vh;
 }
 
 main#home h1 {
@@ -478,12 +480,13 @@ main#home h1 {
 }
 
 main .index-icons {
+  width: 100%;
+  min-height: 20vh, auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
 }
 
 main .index-icons i {
@@ -867,7 +870,8 @@ main .index-icons a:hover {
             transition-delay: 400ms;
   }
   .menu-nav .nav-link {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-top: 0rem;
   }
   .menu-branding {
     height: 25vh;
@@ -922,6 +926,20 @@ main .index-icons a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .index-icons a {
+    font-size: 1rem;
+  }
+  .index-icons a i {
+    font-size: 2.8rem;
+  }
+  .main-footer {
+    padding: 0;
+    height: 40px;
   }
   #btn-footer {
     margin-bottom: 2rem;
