@@ -1,0 +1,47 @@
+#btn-footer {
+   position: relative;
+   bottom: 3rem;
+   // border: white 1px solid;
+   width: 100%;
+   opacity: 0.8;
+   height: 60px;
+   margin-top: 2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   .footer-icons {
+      display: flex;
+      gap: 2rem;
+      i {
+         font-size: 1.8rem;
+         margin: auto;
+      }
+      a {
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         gap: 5px;
+         padding: 0.6rem;
+         margin: 0 0.5rem;
+         font-family: 'Mulish', sans-serif;
+         font-size: 1rem;
+         span {
+            visibility: hidden;
+            font-size: 0.8rem;
+         }
+
+         &:hover {
+            @include easeOut();
+            transform: scale(1.04);
+            color: $secondary-color;
+            span {
+               visibility: visible;
+            }
+         }
+      }
+      .inactive {
+         display: none;
+      }
+   }
+}
