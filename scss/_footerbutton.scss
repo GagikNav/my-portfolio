@@ -6,16 +6,23 @@
    opacity: 0.8;
    height: 60px;
    margin-top: 2rem;
+   margin-bottom: 0rem;
+   padding-top: 5rem;
+   padding-bottom: 1rem;
    display: flex;
    justify-content: center;
    align-items: center;
 
    .footer-icons {
       display: flex;
-      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0rem 2rem;
+      margin: 0.2rem auto;
+
       i {
          font-size: 1.8rem;
-         margin: auto;
+         margin: 0.2rem auto;
       }
       a {
          display: flex;

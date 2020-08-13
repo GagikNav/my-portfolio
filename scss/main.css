@@ -710,6 +710,9 @@ main .index-icons a:hover {
   opacity: 0.8;
   height: 60px;
   margin-top: 2rem;
+  margin-bottom: 0rem;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -725,12 +728,18 @@ main .index-icons a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0rem 2rem;
+  margin: 0.2rem auto;
 }
 
 #btn-footer .footer-icons i {
   font-size: 1.8rem;
-  margin: auto;
+  margin: 0.2rem auto;
 }
 
 #btn-footer .footer-icons a {
@@ -913,6 +922,12 @@ main .index-icons a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  #btn-footer {
+    margin-bottom: 2rem;
+  }
+  .about-info .bio {
+    font-size: 1.3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
