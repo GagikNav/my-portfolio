@@ -553,10 +553,11 @@ main .index-icons a:hover {
   font-size: 1.5rem;
   text-align: justify;
   text-indent: 40px;
+  padding: 2rem;
 }
 
 .about-info .bio p {
-  line-height: 1.5;
+  line-height: 1.15;
 }
 
 .about-info .job-1 {
@@ -640,8 +641,8 @@ main .index-icons a:hover {
 .boxes div {
   font-size: 2rem;
   background: #4d4d4d;
-  -webkit-box-shadow: #999999 2px 4px 8px;
-          box-shadow: #999999 2px 4px 8px;
+  -webkit-box-shadow: gray 1px 2px 6px;
+          box-shadow: gray 1px 2px 6px;
   padding: 1.5rem 2.5rem;
   margin-bottom: 1.5rem;
   -webkit-transition: all 0.5s ease-out;
@@ -649,8 +650,8 @@ main .index-icons a:hover {
 }
 
 .boxes div:hover {
-  -webkit-box-shadow: #b4fbec 4px 6px 10px;
-          box-shadow: #b4fbec 4px 6px 10px;
+  -webkit-box-shadow: #a6fae8 2px 4px 8px;
+          box-shadow: #a6fae8 2px 4px 8px;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }

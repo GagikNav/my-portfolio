@@ -127,8 +127,9 @@ main {
 		font-size: 1.5rem;
 		text-align: justify;
 		text-indent: 40px;
+		padding: 2rem;
 		p {
-			line-height: 1.5;
+			line-height: 1.15;
 		}
 	}
 
@@ -193,13 +194,13 @@ main {
 	div {
 		font-size: 2rem;
 		background: lighten($primary-color, 10);
-		box-shadow: lighten($primary-color, 40) 2px 4px 8px;
+		box-shadow: lighten($primary-color, 30) 1px 2px 6px;
 		// border: 3px solid #fff;
 		padding: 1.5rem 2.5rem;
 		margin-bottom: 1.5rem;
 
 		&:hover {
-			box-shadow: lighten($secondary-color, 25) 4px 6px 10px;
+			box-shadow: lighten($secondary-color, 22) 2px 4px 8px;
 			transform: scale(1.03);
 		}
 
