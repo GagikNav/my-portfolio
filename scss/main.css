@@ -520,6 +520,10 @@ main .index-icons a:hover {
           transform: scale(1.04);
 }
 
+#home {
+  min-height: calc(100vh - 40px);
+}
+
 .about-info {
   display: -ms-grid;
   display: grid;
