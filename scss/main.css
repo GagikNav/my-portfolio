@@ -467,7 +467,7 @@ header {
 
 main {
   padding: 2rem;
-  min-height: calc(100vh - 40px);
+  min-height: calc(100vh - 140px);
 }
 
 main#home {
@@ -591,15 +591,15 @@ main .index-icons a:hover {
 }
 
 .about-info .job:hover {
-  -webkit-box-shadow: #999999 4px 6px 2px;
-          box-shadow: #999999 4px 6px 2px;
+  -webkit-box-shadow: #999999 4px 6px 20px;
+          box-shadow: #999999 4px 6px 20px;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }
 
 .about-info .job:hover:hover {
-  -webkit-box-shadow: #9cfae6 6px 8px 10px;
-          box-shadow: #9cfae6 6px 8px 10px;
+  -webkit-box-shadow: #9cfae6 2px 5px 20px;
+          box-shadow: #9cfae6 2px 5px 20px;
 }
 
 .projects {
@@ -607,23 +607,33 @@ main .index-icons a:hover {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.5rem;
+  gap: 3rem 1rem;
+  margin-bottom: 2rem;
+  justify-items: center;
+  padding: auto;
 }
 
-.projects img {
-  width: 100%;
-  height: 150px;
-  border: 3px #fff solid;
+.projects .item {
+  padding: 0px;
+  height: 100%;
+  max-width: 300px;
+  max-height: 300px;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
-.projects img:hover {
-  border-color: #3bf5cd;
+.projects .item:hover {
   opacity: 0.8;
-  -webkit-transform: scale(1.04);
-          transform: scale(1.04);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: #9cfae6 0px 0px 10px;
+          box-shadow: #9cfae6 0px 0px 10px;
+}
+
+.projects .item img {
   cursor: auto;
+  width: 100%;
+  height: 68%;
 }
 
 .boxes {
@@ -708,14 +718,11 @@ main .index-icons a:hover {
 
 #btn-footer {
   position: relative;
-  bottom: 3rem;
   width: 100%;
   opacity: 0.8;
-  height: 60px;
-  margin-top: 2rem;
-  margin-bottom: 0rem;
-  padding-top: 5rem;
-  padding-bottom: 1rem;
+  height: auto;
+  min-height: 100px;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -736,8 +743,7 @@ main .index-icons a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 0rem 2rem;
-  margin: 0.2rem auto;
+  gap: 5px;
 }
 
 #btn-footer .footer-icons i {
@@ -771,8 +777,8 @@ main .index-icons a:hover {
 #btn-footer .footer-icons a:hover {
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  -webkit-transform: scale(1.04);
-          transform: scale(1.04);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
   color: #3bf5cd;
 }
 
@@ -788,19 +794,17 @@ main .index-icons a:hover {
   .projects {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
-  }
-  .projects img {
-    height: 280px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
-  .projects img {
-    height: 220px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
   }
 }
 
@@ -808,9 +812,8 @@ main .index-icons a:hover {
   .projects {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-  }
-  .projects img {
-    height: 200px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
   }
   main {
     -webkit-box-align: center;

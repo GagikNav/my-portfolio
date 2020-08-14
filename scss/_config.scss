@@ -7,6 +7,10 @@ $portrait-image: url('../img/Gagik-portrait-250px.jpg');
 $portrait-image-small: url('../img/Gagik-portrait-150px.jpg');
 $border: solid 4px darken($secondary-color, 25);
 $shadow: lighten($primary-color, 10) 5px 6px 10px;
+
+@mixin border {
+	border: solid 1px $secondary-color;
+}
 @mixin easeOut {
 	transition: all 0.5s ease-out;
 }
@@ -33,10 +37,10 @@ $shadow: lighten($primary-color, 10) 5px 6px 10px;
 }
 
 @mixin shadow-hover {
-	box-shadow: lighten($primary-color, 40) 4px 6px 2px;
+	box-shadow: lighten($primary-color, 40) 4px 6px 20px;
 
 	&:hover {
-		box-shadow: lighten($secondary-color, 20) 6px 8px 10px;
+		box-shadow: lighten($secondary-color, 20) 2px 5px 20px;
 	}
 }
 

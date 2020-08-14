@@ -1,54 +1,50 @@
 #btn-footer {
-   position: relative;
-   bottom: 3rem;
-   // border: white 1px solid;
-   width: 100%;
-   opacity: 0.8;
-   height: 60px;
-   margin-top: 2rem;
-   margin-bottom: 0rem;
-   padding-top: 5rem;
-   padding-bottom: 1rem;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+	position: relative;
+	// @include border;
+	width: 100%;
+	opacity: 0.8;
+	height: auto;
+	min-height: 100px;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-   .footer-icons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0rem 2rem;
-      margin: 0.2rem auto;
+	.footer-icons {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 5px;
 
-      i {
-         font-size: 1.8rem;
-         margin: 0.2rem auto;
-      }
-      a {
-         display: flex;
-         justify-content: center;
-         flex-direction: column;
-         gap: 5px;
-         padding: 0.6rem;
-         margin: 0 0.5rem;
-         font-family: 'Mulish', sans-serif;
-         font-size: 1rem;
-         span {
-            visibility: hidden;
-            font-size: 0.8rem;
-         }
+		i {
+			font-size: 1.8rem;
+			margin: 0.2rem auto;
+		}
+		a {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			gap: 5px;
+			padding: 0.6rem;
+			margin: 0 0.5rem;
+			font-family: 'Mulish', sans-serif;
+			font-size: 1rem;
+			span {
+				visibility: hidden;
+				font-size: 0.8rem;
+			}
 
-         &:hover {
-            @include easeOut();
-            transform: scale(1.04);
-            color: $secondary-color;
-            span {
-               visibility: visible;
-            }
-         }
-      }
-      .inactive {
-         display: none;
-      }
-   }
+			&:hover {
+				@include easeOut();
+				transform: scale(1.01);
+				color: $secondary-color;
+				span {
+					visibility: visible;
+				}
+			}
+		}
+		.inactive {
+			display: none;
+		}
+	}
 }
