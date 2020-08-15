@@ -28,44 +28,7 @@
 	.btn-line {
 		@extend %line;
 		@include easeOut();
-
-		// transition: all 0.15s 0 ease-out;
-		// &:nth-child(2) {
-		// 	animation: menu-load-state-top 0.5s;
-		// }
-
-		// &:nth-child(3) {
-		// 	transition: all 0.1s 0.1s ease-in-out;
-		// 	opacity: 1;
-		// }
-
-		// &:nth-child(4) {
-		// 	animation: menu-load-state-bottom 0.5s;
-		// }
 	}
-
-	// .btn-line {
-	// 	&:hover {
-	// 		transition: all 0.15s 0 ease-out;
-	// 		&:nth-child(1) {
-	// 			animation: menu-hover-top-over 0.5s 0.5s forwards;
-	// 		}
-
-	// 		&:nth-child(2) {
-	// 			transition: all 0.1s 0.1s ease-in-out;
-	// 			opacity: 0;
-	// 		}
-
-	// 		&:nth-child(3) {
-	// 			animation: menu-hover-bottom-over 0.5s 0.5s forwards;
-	// 		}
-	// 	}
-	// 	p {
-	// 		transition: all 0.1s 0.5s ease-in-out;
-	// 		opacity: 1;
-	// 	}
-	// }
-	// transform to X
 
 	&.close {
 		transform: rotate(180deg);

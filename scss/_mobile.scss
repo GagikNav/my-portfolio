@@ -92,6 +92,9 @@
 	.about-info {
 		grid-template-columns: 1fr;
 		grid-template-areas: 'bioimg' 'bio';
+		.bio {
+			text-align: left;
+		}
 		//    // 'bio'
 		//    // 'job1'
 		//    // 'job2'
@@ -162,6 +165,7 @@
 	.about-info {
 		.bio {
 			font-size: 1.3rem;
+			text-align: left;
 		}
 	}
 }
