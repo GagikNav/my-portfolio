@@ -614,18 +614,18 @@ main .index-icons a:hover {
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   gap: 3rem 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   justify-items: center;
   padding: auto;
-  min-height: 300px;
+  height: auto;
 }
 
 .projects .item {
   background: #404040;
   border-radius: 5px;
-  height: auto;
   padding: 0px;
-  max-width: 300px;
+  max-width: 21rem;
+  max-height: 18rem;
   height: auto;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -649,6 +649,8 @@ main .index-icons a:hover {
 }
 
 .projects .item .description .modal {
+  display: none;
+  /* Hidden by default */
   position: fixed;
   /* Stay in place */
   z-index: 1;
@@ -669,10 +671,12 @@ main .index-icons a:hover {
   background-color: #1a1a1a;
   margin: 15% auto;
   /* 15% from the top and centered */
-  padding: 20px;
+  padding: 50px;
   width: 80%;
   /* Could be more or less, depending on screen size */
   border-radius: 5px;
+  -webkit-box-shadow: #9cfae6 0px 0px 10px;
+          box-shadow: #9cfae6 0px 0px 10px;
 }
 
 .projects .item .description .modal-close {
@@ -694,9 +698,9 @@ main .index-icons a:hover {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: 'a b' ' c c';
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+      grid-template-areas: 'a b' 'c c';
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
   justify-items: center;
   margin: auto;
   width: 96%;
@@ -725,8 +729,9 @@ main .index-icons a:hover {
   cursor: auto;
   padding: 5px;
   width: 100%;
-  height: 80%;
   border-radius: 10px;
+  height: 70%;
+  max-height: 12rem;
 }
 
 .btn, .btn-dark, .btn-light {
@@ -743,6 +748,7 @@ main .index-icons a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 2rem;
 }
 
 .btn:hover, .btn-dark:hover, .btn-light:hover {
