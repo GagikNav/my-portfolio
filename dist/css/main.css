@@ -611,25 +611,35 @@ main .index-icons a:hover {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  gap: 6rem 1rem;
-  margin-bottom: 5rem;
+  gap: 3rem 1rem;
+  margin-bottom: 1rem;
   justify-items: center;
   padding: auto;
 }
 
 .projects .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   padding: 0px;
-  height: 100%;
+  height: auto;
   max-width: 300px;
-  max-height: 300px;
+  max-height: 400px;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
 .projects .item:hover {
-  opacity: 0.8;
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  opacity: 0.9;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
   -webkit-box-shadow: #9cfae6 0px 0px 10px;
           box-shadow: #9cfae6 0px 0px 10px;
 }
@@ -637,7 +647,7 @@ main .index-icons a:hover {
 .projects .item img {
   cursor: auto;
   width: 100%;
-  height: 68%;
+  height: 30vh;
   border-radius: 5px;
 }
 
