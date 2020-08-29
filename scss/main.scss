@@ -168,8 +168,8 @@ main {
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3rem 1rem;
-  margin-bottom: 2rem;
+  gap: 6rem 1rem;
+  margin-bottom: 5rem;
   justify-items: center;
   padding: auto;
   // @include border;
@@ -191,35 +191,34 @@ main {
       border-radius: 5px;
     }
     @include easeOut();
-  }
+    // technologies
 
-  // technologies
-
-  .technologies {
-    font-family: 'Mulish', sans-serif;
-    font-weight: 200;
-    background: darken($primary-color, 10);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    min-height: 70px;
-    h5 {
-      display: none;
-      padding: 0;
-      margin: 0;
-    }
-    ul {
-      gap: 10px 20px;
-      padding: 10px 10px;
-      margin: 0;
-      width: 100%;
+    .technologies {
+      font-family: 'Mulish', sans-serif;
+      font-weight: 200;
+      background: darken($primary-color, 10);
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      flex-wrap: wrap;
-      font-size: 0.8rem;
-      list-style-type: none;
+      align-items: center;
+      border-radius: 5px;
+      min-height: 70px;
+      h5 {
+        display: none;
+        padding: 0;
+        margin: 0;
+      }
+      ul {
+        gap: 10px 20px;
+        padding: 10px 10px;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 0.8rem;
+        list-style-type: none;
+      }
     }
   }
 }

@@ -611,8 +611,8 @@ main .index-icons a:hover {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  gap: 3rem 1rem;
-  margin-bottom: 2rem;
+  gap: 6rem 1rem;
+  margin-bottom: 5rem;
   justify-items: center;
   padding: auto;
 }
@@ -641,7 +641,7 @@ main .index-icons a:hover {
   border-radius: 5px;
 }
 
-.projects .technologies {
+.projects .item .technologies {
   font-family: 'Mulish', sans-serif;
   font-weight: 200;
   background: #1a1a1a;
@@ -662,13 +662,13 @@ main .index-icons a:hover {
   min-height: 70px;
 }
 
-.projects .technologies h5 {
+.projects .item .technologies h5 {
   display: none;
   padding: 0;
   margin: 0;
 }
 
-.projects .technologies ul {
+.projects .item .technologies ul {
   gap: 10px 20px;
   padding: 10px 10px;
   margin: 0;
@@ -958,9 +958,6 @@ main .index-icons a:hover {
   .projects {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-  }
-  .projects .item {
-    margin: 2rem 0;
   }
   .projects img {
     height: 280px;
