@@ -969,8 +969,8 @@ main .index-icons a:hover {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
-  .projects img {
-    height: 280px;
+  .projects .item img {
+    height: 25vh;
   }
   main {
     -webkit-box-align: center;
