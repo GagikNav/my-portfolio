@@ -167,19 +167,18 @@ main {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 1rem 1rem;
-  justify-items: center;
-  justify-content: center;
   height: 40%;
-  padding: 5rem 2rem;
+  padding: 3rem 2rem;
+  justify-items: center;
+
   margin: 1rem auto;
   .item {
     border-radius: 5px;
     background: transparent;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-items: center;
     height: auto;
     max-width: 300px;
     max-height: 500px;
