@@ -168,12 +168,12 @@ main {
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3rem 1rem;
-  margin-bottom: 1rem;
+  gap: 1rem 1rem;
   justify-items: center;
-  padding: auto;
-  height: 30%;
-  padding: 2rem;
+  justify-content: center;
+  height: 40%;
+  padding: 5rem 2rem;
+  margin: 1rem auto;
   .item {
     border-radius: 5px;
     background: transparent;
