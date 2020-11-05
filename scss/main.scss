@@ -61,6 +61,7 @@ main {
   &#home {
     overflow-x: hidden;
     height: 60vh;
+    padding: 0;
 
     h1 {
       margin-top: 10vh;
@@ -299,5 +300,6 @@ main {
   opacity: 0.1;
   height: 40px;
 }
+
 @import './footerbutton';
 @import './mobile';

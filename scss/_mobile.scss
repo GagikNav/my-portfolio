@@ -165,4 +165,10 @@
       font-size: 1.3rem;
     }
   }
+  #bg-video {
+    video {
+      display: none;
+      visibility: hidden;
+    }
+  }
 }
