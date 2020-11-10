@@ -5,11 +5,9 @@
   #contact-form {
     display: flex;
     flex-direction: column;
-    padding: 15px;
-    // background: lighten($primary-color, 10);
     box-shadow: lighten($primary-color, 30) 1px 2px 6px;
     padding: 0.5rem 2.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     &:hover {
       box-shadow: lighten($secondary-color, 22) 2px 2px 8px;
       @include easeOut();
@@ -23,7 +21,7 @@
       width: 100%;
       border: 1px solid #ccc;
       background: #fff;
-      margin: 0.5rem auto;
+      margin: 0.25rem auto;
       padding: 10px;
       border-radius: 3px;
       -webkit-border-radius: 3px;
@@ -86,7 +84,7 @@
   }
   fieldset {
     border: medium none !important;
-    margin: 0 0 10px;
+    margin: 0 0 5px 0;
     min-width: 100%;
     padding: 0;
     width: 100%;
@@ -96,7 +94,11 @@
   display: flex;
   justify-content: center;
 }
-
+#recaptcha {
+  // height: 70px;
+  margin: 10px 0 10px 0;
+  // background: #fff;
+}
 #contact-form input[type='text']:hover,
 #contact-form input[type='email']:hover,
 #contact-form input[type='tel']:hover,
