@@ -503,7 +503,8 @@ main .section {
   justify-content: center; }
 
 #recaptcha {
-  margin: 10px 0 10px 0; }
+  margin: 10px 0 10px 0;
+  width: 100%; }
 
 #contact-form input[type='text']:hover,
 #contact-form input[type='email']:hover,
@@ -669,4 +670,7 @@ main .section {
     main .form-container #contact-form input[type='url'],
     main .form-container #contact-form textarea {
       margin: 5px;
-      padding: 10px; } }
+      padding: 10px; }
+  main .form-container #recaptcha {
+    max-width: 100px;
+    margin-top: 5px; } }
