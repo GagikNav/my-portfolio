@@ -504,7 +504,7 @@ main .section {
 
 #recaptcha {
   margin: 10px 0 10px 0;
-  width: 100%; }
+  width: 250px; }
 
 #contact-form input[type='text']:hover,
 #contact-form input[type='email']:hover,
@@ -663,6 +663,7 @@ main .section {
   main .section {
     flex-direction: column; }
   main .form-container #contact-form {
+    overflow: hidden;
     padding: 5px 15px; }
     main .form-container #contact-form input[type='text'],
     main .form-container #contact-form input[type='email'],
@@ -670,7 +671,4 @@ main .section {
     main .form-container #contact-form input[type='url'],
     main .form-container #contact-form textarea {
       margin: 5px;
-      padding: 10px; }
-  main .form-container #recaptcha {
-    max-width: 100px;
-    margin-top: 5px; } }
+      padding: 10px; } }

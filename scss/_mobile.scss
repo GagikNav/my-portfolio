@@ -179,6 +179,8 @@
     }
     .form-container {
       #contact-form {
+        overflow: hidden;
+
         padding: 5px 15px;
         input[type='text'],
         input[type='email'],
@@ -188,10 +190,6 @@
           margin: 5px;
           padding: 10px;
         }
-      }
-      #recaptcha {
-        max-width: 100px;
-        margin-top: 5px;
       }
     }
   }
