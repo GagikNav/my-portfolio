@@ -171,4 +171,24 @@
       visibility: hidden;
     }
   }
+  // Contact form
+
+  main {
+    .section {
+      flex-direction: column;
+    }
+    .form-container {
+      #contact-form {
+        padding: 5px 15px;
+        input[type='text'],
+        input[type='email'],
+        input[type='tel'],
+        input[type='url'],
+        textarea {
+          margin: 5px;
+          padding: 10px;
+        }
+      }
+    }
+  }
 }

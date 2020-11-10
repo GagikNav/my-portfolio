@@ -1,0 +1,113 @@
+.form-container {
+  max-width: 500px;
+  width: 100%;
+
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    // background: lighten($primary-color, 10);
+    box-shadow: lighten($primary-color, 30) 1px 2px 6px;
+    padding: 0.5rem 2.5rem;
+    margin-bottom: 1.5rem;
+    &:hover {
+      box-shadow: lighten($secondary-color, 22) 2px 2px 8px;
+      @include easeOut();
+    }
+    input[type='text'],
+    input[type='email'],
+    input[type='tel'],
+    input[type='url'],
+    textarea {
+      margin: auto;
+      width: 100%;
+      border: 1px solid #ccc;
+      background: #fff;
+      margin: 0.5rem auto;
+      padding: 10px;
+      border-radius: 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+    }
+
+    h3 {
+      display: block;
+      font-size: 2rem;
+      font-weight: 300;
+      margin-bottom: 10px;
+      margin-top: 0px;
+    }
+    h4 {
+      display: block;
+      display: none;
+      margin: 5px 0 5px 0;
+      font-size: 13px;
+      font-weight: 400;
+    }
+
+    button[type='submit'] {
+      cursor: pointer;
+      width: 50%;
+      border: none;
+      border-radius: 5px;
+      background: lighten($primary-color, 10);
+      color: $secondary-color;
+      padding: 10px;
+      font-size: 15px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      &:hover {
+        transform: scale(1.05);
+        transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+      }
+      &:active {
+        outline: 0;
+        border: 1px solid #aaa;
+      }
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: 0;
+      border: 1px solid #aaa;
+    }
+  }
+  fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+}
+#submit {
+  display: flex;
+  justify-content: center;
+}
+
+#contact-form input[type='text']:hover,
+#contact-form input[type='email']:hover,
+#contact-form input[type='tel']:hover,
+#contact-form input[type='url']:hover,
+#contact-form textarea:hover {
+  transition: all 0.3s ease-in-out;
+  border: 1px solid $secondary-color;
+}
+
+#contact-form textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}

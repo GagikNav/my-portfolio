@@ -63,24 +63,67 @@
       <main id="contact">
          <h1 class="lg-heading">Contact <span class="text-secondary">Me</span>
          </h1>
-         <h2 class="sm-heading">You can reach me by...</h2>
+         <h2 class="sm-heading">Please fill the form or email me.
+
+         </h2>
 
 
-         <div class="boxes">
+         <div class="section">
 
-            <div class="email">
-               <span class="text-secondary">Email:</span> gagik.n@gmail.com
+            <!--$  Boxes Section-->
+
+            <div class="boxes">
+
+               <div class="email">
+                  <span class="text-secondary">Email:</span> gagik.n@gmail.com
+               </div>
+
+               <div class="phone">
+                  <span class="text-secondary">Phone Number:</span> +31(6)100 90 642
+               </div>
+
+               <div class="address">
+                  <span class="text-secondary">Location:</span> Amsterdam, Netherlands
+               </div>
+
+            </div>
+            <!--$ End of Boxes Section-->
+
+
+            <!--$  Contact Form  Section-->
+
+            <div class="form-container">
+               <form id="contact-form" data-netlify="true" data-netlify-recaptcha="true" action="" method="POST"
+                     name="contact">
+                  <h3>Contact me</h3>
+
+                  <fieldset>
+                     <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                  </fieldset>
+                  <fieldset>
+                     <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                  </fieldset>
+                  <fieldset>
+                     <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+                  </fieldset>
+                  <fieldset>
+                     <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+                  </fieldset>
+                  <fieldset>
+                     <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                  </fieldset>
+
+                  <fieldset id="submit">
+                     <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                  </fieldset>
+
+               </form>
             </div>
 
-            <div class="phone">
-               <span class="text-secondary">Phone Number:</span> +31(6)100 90 642
-            </div>
 
-            <div class="address">
-               <span class="text-secondary">Location:</span> Amsterdam, Netherlands
-            </div>
-
+            <!--$  End of --------Contact Form  Section-->
          </div>
+
 
       </main>
       <div id="btn-footer">
