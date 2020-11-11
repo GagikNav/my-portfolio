@@ -10,14 +10,14 @@ const copyright = document.getElementById('main-footer');
 const title = document.title;
 const d = new Date();
 const year = d.getFullYear();
-copyright.innerHTML = `Copyright &copy; ${year}`;
+copyright.innerHTML = `Copyright &copy Gagik Navasatariyan ${year}`;
 
 // Dynamic resume link
 const resumeLinks = document.querySelectorAll('#resume');
 resumeLinks.forEach(link => {
   link.setAttribute(
     'href',
-    'https://drive.google.com/file/d/1BxrmbPMpPJwQSQ4njTb_jpnTgrEIapK-/view?usp=sharing',
+    'https://docs.google.com/document/d/1iuzxUVhxHD_g57gSNwIAbPIT-WosWQyXje_L-xreIEk/edit?usp=sharing',
   );
 });
 
