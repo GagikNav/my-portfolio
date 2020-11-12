@@ -2,6 +2,7 @@
 
 'strict';
 const menuBtn = document.querySelector('.menu-btn');
+// const cookieBtn = document.getElementById('cookie-btn');
 const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
 const menuBranding = document.querySelector('.menu-branding');
@@ -46,6 +47,10 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+// Function cookie button
+$('#cookie-btn').click(() => {
+  $('#cookie-notice').addClass('hidden');
+});
 
 // this switch is added to change footer icons dynamically
 

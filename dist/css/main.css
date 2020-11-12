@@ -421,6 +421,41 @@ main .section {
   opacity: 0.1;
   height: 40px; }
 
+#cookie-notice {
+  background: #000000da;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 0 3rem 0;
+  z-index: 10; }
+  #cookie-notice.hidden {
+    transition: all 0.6s ease-in-out;
+    transform: translateY(100%);
+    opacity: 0.5; }
+  #cookie-notice p {
+    width: 50%;
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 15px;
+    line-height: 2;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    max-height: 350px;
+    overflow-x: scroll;
+    overflow-x: hidden; }
+  #cookie-notice #cookie-btn {
+    align-self: flex-start;
+    width: 100px;
+    margin-left: 25%;
+    padding: 10px;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer; }
+
 .form-container {
   max-width: 500px;
   width: 100%; }
