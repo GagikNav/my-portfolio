@@ -14,6 +14,7 @@ const year = d.getFullYear();
 copyright.innerHTML = `Copyright &copy Gagik Navasatariyan ${year}`;
 
 // Dynamic resume link
+
 const resumeLinks = document.querySelectorAll('#resume');
 resumeLinks.forEach(link => {
   link.setAttribute(
@@ -47,10 +48,58 @@ function toggleMenu() {
     showMenu = false;
   }
 }
-// Function cookie button
+
+// ! ********************************* //
+// Cookie Section
+
+// % Appending to all pages
+
+$('footer').after('<div id="cookie-notice" class="hidden"></div>');
+$('#cookie-notice').append('<p id="cookie-text"></p>');
+$('#cookie-text').text(
+  'I use cookies and other tracking technologies to improve your browsing experience on my website.By browsing my website, you consent to my use of cookies and other tracking technologies.',
+);
+$('#cookie-notice').append(
+  '<button id="cookie-btn" class="btn-light">OK</button>',
+);
+
+// Show cookie notice with delay
+
+function showCookieNotice() {
+  setTimeout(() => {
+    $('#cookie-notice').removeClass('hidden');
+    $('#cookie-notice').addClass('show');
+  }, 100);
+}
+$('window').on('load', showCookieNotice());
+
+// Closing cookie notice
+
 $('#cookie-btn').click(() => {
+  cookieStorage.setCookie('isCookieUsed', true, 30);
   $('#cookie-notice').addClass('hidden');
 });
+
+//  Cookie Get Set functions
+
+const cookieStorage = {
+  getCookie: item => {
+    const cookies = document.cookie
+      .split(';')
+      .map(cookie => cookie.split('='))
+      .reduce((acc, [key, value]) => ({ ...acc, [key.trim()]: value }), {});
+    return cookies[item];
+  },
+
+  setCookie: (key, value, exdays) => {
+    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+    let expires = 'expires=' + d.toUTCString();
+    document.cookie = `${key}=${value}; ${expires}`;
+  },
+};
+
+// Set cookies here
+setTimeout(() => {}, 3000);
 
 // this switch is added to change footer icons dynamically
 
