@@ -199,6 +199,10 @@ main {
       height: 200px;
       border-radius: 5px;
     }
+    #calculator {
+      background: #777;
+      object-fit: contain;
+    }
     @include easeOut();
 
     // technologies
