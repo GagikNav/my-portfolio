@@ -6,6 +6,8 @@
 
 html {
   box-sizing: border-box;
+  height: 100%;
+  overflow: hidden;
 }
 
 *,
@@ -22,6 +24,7 @@ body {
   margin: 0;
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 1.5;
+  overflow: auto;
 }
 
 // Headings
