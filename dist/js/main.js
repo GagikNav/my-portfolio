@@ -63,3 +63,20 @@ switch (title) {
     break;
   default:
 }
+
+//  Hover effect on project cards
+console.log($('.projects .item .overlay').length);
+
+for (let index = 0; index < $('.projects .item .overlay').length; index++) {
+  const element = $('.projects .item ')[index];
+  const overlayElement = $('.projects .item .overlay')[index];
+
+  $(element).hover(
+    () => {
+      $(overlayElement).addClass('show');
+    },
+    () => {
+      $(overlayElement).removeClass('show');
+    },
+  );
+}

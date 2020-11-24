@@ -324,7 +324,7 @@ main {
     flex-direction: column;
     justify-items: center;
     height: auto;
-    max-width: 300px;
+    max-width: 350px;
     max-height: 500px;
     overflow: hidden;
     transition: all 0.5s ease-out; }
@@ -334,6 +334,24 @@ main {
       opacity: 0.9;
       transform: scale(1.01);
       box-shadow: #9cfae6 0px 0px 10px; }
+    .projects .item .overlay {
+      position: absolute;
+      width: 100%;
+      height: 200px;
+      background: #333;
+      color: white;
+      z-index: 10;
+      opacity: 0.9;
+      padding: 10px;
+      transform: translateX(350px);
+      transition: all 0.5s ease-out; }
+      .projects .item .overlay h4 {
+        color: #3bf5cd;
+        font-size: 1.2rem; }
+      .projects .item .overlay p {
+        font-size: 0.8rem; }
+      .projects .item .overlay.show {
+        transform: translateX(0px); }
     .projects .item img {
       cursor: pointer;
       width: 100%;
@@ -634,9 +652,14 @@ main .section {
   #not-responsive {
     pointer-events: none; }
   .projects {
-    grid-template-columns: repeat(1, 1fr); }
-    .projects .item img {
-      height: 25vh; }
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem 0rem; }
+    .projects .item {
+      padding: 0; }
+      .projects .item .overlay {
+        height: 25vh; }
+      .projects .item img {
+        height: 25vh; }
   main {
     align-items: center;
     text-align: center; }

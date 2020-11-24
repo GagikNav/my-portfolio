@@ -111,7 +111,12 @@
 
   .projects {
     grid-template-columns: repeat(1, 1fr);
+    padding: 1rem 0rem;
     .item {
+      padding: 0;
+      .overlay {
+        height: 25vh;
+      }
       img {
         height: 25vh;
       }
