@@ -209,4 +209,13 @@
       }
     }
   }
+
+  // Cookie
+  #cookie-notice {
+    flex-direction: column;
+    p {
+      background: darken($primary-color, 30);
+      width: 90%;
+    }
+  }
 }

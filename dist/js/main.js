@@ -73,13 +73,13 @@ function showCookieNotice() {
 }
 
 // Closing cookie notice
-
+// by clicking sets cookie consent to true
 $('#cookie-btn').click(() => {
   cookieStorage.setCookie('isCookieUsed', true, 30);
   $('#cookie-notice').addClass('hidden');
 });
 
-//  Cookie Get Set functions
+//  Cookie Get & Set functions
 
 const cookieStorage = {
   getCookie: item => {
@@ -98,9 +98,10 @@ const cookieStorage = {
 };
 console.log(typeof cookieStorage.getCookie('isCookieUsed'));
 
+// Set cookies here
+
 if (cookieStorage.getCookie('isCookieUsed') !== 'true') {
   $('window').on('load', showCookieNotice());
-  // Set cookies here
   cookieStorage.setCookie('isCookieUsed', true, 30);
 }
 
