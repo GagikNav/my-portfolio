@@ -96,13 +96,11 @@ const cookieStorage = {
     document.cookie = `${key}=${value}; ${expires}`;
   },
 };
-console.log(typeof cookieStorage.getCookie('isCookieUsed'));
 
 // Set cookies here
 
 if (cookieStorage.getCookie('isCookieUsed') !== 'true') {
   $('window').on('load', showCookieNotice());
-  cookieStorage.setCookie('isCookieUsed', true, 30);
 }
 
 // this switch is added to change footer icons dynamically
@@ -123,7 +121,6 @@ switch (title) {
 }
 
 //  Hover effect on project cards
-console.log($('.projects .item .overlay').length);
 
 for (let index = 0; index < $('.projects .item .overlay').length; index++) {
   const element = $('.projects .item ')[index];
