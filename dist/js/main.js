@@ -17,7 +17,7 @@ const resumeLinks = document.querySelectorAll('#resume');
 resumeLinks.forEach(link => {
   link.setAttribute(
     'href',
-    'https://docs.google.com/document/d/1iuzxUVhxHD_g57gSNwIAbPIT-WosWQyXje_L-xreIEk/edit?usp=sharing',
+    'https://docs.google.com/document/d/1N17EG88BK6r69n1j6mIruQn_CsSolwrmbjeukHs-2VE/edit?usp=sharing',
   );
 });
 
