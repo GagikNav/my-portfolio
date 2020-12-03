@@ -57,7 +57,7 @@ function toggleMenu() {
 $('footer').after('<div id="cookie-notice" class="hidden"></div>');
 $('#cookie-notice').append('<p id="cookie-text"></p>');
 $('#cookie-text').text(
-  'I use cookies and other tracking technologies to improve your browsing experience on my website.By browsing my website, you consent to my use of cookies and other tracking technologies.',
+  'I use cookies and other tracking technologies to improve your browsing experience on my website. By browsing my website, you consent to my use of cookies and other tracking technologies and I assume you are happy with that.',
 );
 $('#cookie-notice').append(
   '<button id="cookie-btn" class="btn-light">OK</button>',
@@ -69,9 +69,8 @@ function showCookieNotice() {
   setTimeout(() => {
     $('#cookie-notice').removeClass('hidden');
     $('#cookie-notice').addClass('show');
-  }, 100);
+  }, 500);
 }
-$('window').on('load', showCookieNotice());
 
 // Closing cookie notice
 
@@ -97,9 +96,13 @@ const cookieStorage = {
     document.cookie = `${key}=${value}; ${expires}`;
   },
 };
+console.log(typeof cookieStorage.getCookie('isCookieUsed'));
 
-// Set cookies here
-setTimeout(() => {}, 3000);
+if (cookieStorage.getCookie('isCookieUsed') !== 'true') {
+  $('window').on('load', showCookieNotice());
+  // Set cookies here
+  cookieStorage.setCookie('isCookieUsed', true, 30);
+}
 
 // this switch is added to change footer icons dynamically
 
