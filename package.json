@@ -9,7 +9,7 @@
 	"author": "Gagik",
 	"license": "ISC",
 	"dependencies": {
-		"lodash": "^4.17.19",
+		"lodash": "^4.17.21",
 		"node-sass": "^4.14.1"
 	}
 }
