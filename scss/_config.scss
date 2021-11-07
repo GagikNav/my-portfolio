@@ -7,8 +7,7 @@ $portrait-image: url('../img/Gagik-portrait-250px.jpg');
 $portrait-image-small: url('../img/Gagik-portrait-150px.jpg');
 $border: solid 4px darken($secondary-color, 25);
 $shadow: lighten($primary-color, 10) 5px 6px 10px;
-
-@mixin border {
+$project-img-height: 200px @mixin border {
   border: solid 1px $secondary-color;
 }
 @mixin easeOut {
