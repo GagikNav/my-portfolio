@@ -109,24 +109,11 @@
     pointer-events: none;
   }
 
-  .projects {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 1rem 0rem;
-    .item {
-      padding: 0;
-      .overlay {
-        height: 25vh;
-      }
-      img {
-        height: 25vh;
-      }
-    }
-  }
-
   main {
     align-items: center;
     text-align: center;
-
+    margin: 0;
+    padding: 3rem 1rem;
     &#home {
       padding: 0;
       margin: 0;
@@ -145,6 +132,24 @@
     .sm-heading {
       // color: red;
       font-size: 1rem !important;
+    }
+
+    .projects {
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      justify-items: center;
+      .item {
+        padding: 0;
+        margin: 0;
+        .overlay {
+          height: 25vh;
+        }
+        img {
+          height: 25vh;
+        }
+      }
     }
   }
 
