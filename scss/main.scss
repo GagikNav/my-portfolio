@@ -188,7 +188,7 @@ main {
     flex-direction: column;
     justify-items: center;
     height: auto;
-    max-width: 350px;
+    width: 350px;
     max-height: 500px;
     overflow: hidden;
     i {
@@ -199,11 +199,10 @@ main {
       transform: scale(1.01);
       box-shadow: lighten($secondary-color, 20) 0px 0px 10px;
     }
-
     .overlay {
       position: absolute;
       width: 100%;
-      height: 200px;
+      height: 250px;
       background: $primary-color;
       color: white;
       z-index: 10;
@@ -224,10 +223,11 @@ main {
     }
     img {
       cursor: pointer;
-      width: 100%;
-      height: 200px;
       border-radius: 5px;
+      width: 100%;
+      height: 250px;
     }
+
     #calculator {
       background: #777;
       object-fit: contain;
