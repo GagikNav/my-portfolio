@@ -11,12 +11,13 @@
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTFZ84EESV"></script>
       <script>
-         setTimeout(() => {
+         setTimeout(() =>
+         {
             window.dataLayer = window.dataLayer || [];
             function gtag() { dataLayer.push(arguments); }
             gtag('js', new Date());
 
-            gtag('config', 'G-RTFZ84EESV');
+            gtag('config', 'G-RTFZ84EESV', { 'anonymize_ip': true });
 
          }, 10000);
       </script>
